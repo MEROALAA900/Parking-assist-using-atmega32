@@ -26,7 +26,7 @@ void Ultrasonic_init(void){
 
 void Ultrasonic_Trigger(void){
 	GPIO_writePin(ULTRASONIC_TRIGGER_PORT_ID, ULTRASONIC_TRIGGER_PIN_ID, LOGIC_HIGH);
-	_delay_us(15);
+	_delay_us(200);
 	GPIO_writePin(ULTRASONIC_TRIGGER_PORT_ID, ULTRASONIC_TRIGGER_PIN_ID, LOGIC_LOW);
 }
 
